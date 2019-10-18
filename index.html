@@ -1,0 +1,41 @@
+<!--
+ * @Date: 2019-09-28 15:36:05
+ * @LastEditors: Cloud
+ * @LastEditTime: 2019-10-11 13:44:33
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plane war</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="game-count">
+            <div id="score-board">
+                <span>分数：</span>
+                <span id="score">0</span>
+            </div>
+            <div id="suspend-board">
+                <button type="button" id="goOn">继续</button>
+                <button type="button" id="reStart">重新开始</button>
+                <button type="button" id="stop">回到主页</button>
+            </div>
+            <div id="end-board">
+                <div>飞机大战分数</div>
+                <div id="endScore"></div>
+                <button type="button" class="reStart">再来一局</button>
+            </div>
+        </div>
+        <div id="planes"></div>
+        <div id="start-con">
+            <button type="button" id="start">开始游戏</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

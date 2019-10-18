@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container {
+    position: relative;
+    width: 320px;
+    height: 550px;
+    margin: 0 auto;
+}
+#planes {
+    position: absolute;
+    background: url(images/bcgStart.png) no-repeat;
+    width: 320px;
+    height: 550px;
+    z-index: -1;
+}
+/* 开始按钮组件 */
+#start-con {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#start-con>button {
+    padding: 5px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#game-count {
+    position: absolute;
+}
+/* 得分组件num1 */
+#score-board {
+    font-size: 19px;
+    font-weight: 800;
+    display: none;
+}
+/* 暂停按钮组件num2*/
+#suspend-board {
+    border: 1px solid black;
+    position: relative;
+    left: 50%;
+    top: 150px;
+    /* 对其隐藏 */
+    display: none;
+}
+#suspend-board button{
+    display: block;
+    width: 150px;
+    padding: 5px 0;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+/* 游戏结束组件num3 */
+#end-board {
+    border: 1px solid black;
+    position: relative;
+    top: 200px;
+    width: 150px;
+    margin: 0 auto;
+    left: 50%;
+    border-radius: 10px;
+    /* 对其隐藏 */
+    display: none;
+}
+#end-board>div {
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+}
+#end-board>button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
